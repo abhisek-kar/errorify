@@ -1,9 +1,12 @@
 {
-  "name": "@abhisek/errorify",
-  "version": "1.0.0",
+  "name": "@dev-abhi/errorify",
+  "version": "1.0.2",
   "description": "A utility package for simplified error handling and management in Node.js applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -27,6 +30,7 @@
     "@types/node": "^20.17.8",
     "jest": "^29.0.0",
     "ts-jest": "^29.0.0",
+    "tsc-watch": "^6.2.1",
     "typescript": "^5.7.2"
   }
 }

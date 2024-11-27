@@ -2,7 +2,10 @@ import { ErrorCodes } from "../../utils/errorCodes";
 import { CustomError, ErrorDetails } from "../CustomError";
 
 export class ValidationError extends CustomError {
-  constructor(message: string = "Validation Failed", details?: ErrorDetails) {
+  constructor(
+    message: string = "Validation Failed",
+    details: ErrorDetails = {}
+  ) {
     super(message, 400, ErrorCodes.VALIDATION_ERROR, details);
   }
 }
